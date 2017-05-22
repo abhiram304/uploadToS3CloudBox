@@ -14,7 +14,7 @@ exports.list = function(req, res){
 		          urlArr.push(url);
 		        });
 		    }
-		    res.render('listObjects', {"urlArr":bucketContents} );
+		    res.render('listObjects', {"urlArr":bucketContents, "abc": urlArr } );
 		});
 	
 };

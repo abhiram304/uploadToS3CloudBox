@@ -51,7 +51,7 @@ tr:nth-child(even) {
    <% for (var i in urlArr){ %>
     <tr>
     <!--<img src="<%=urlArr[i]%>" style="width:304px;height:228px;">  -->
-    <td><a href="#"><%=urlArr[i].Key %></a></td>
+    <td><a href="<%= abc[i] %>"><%=urlArr[i].Key %></a></td>
     <td><a href="/delete?fileName=<%=urlArr[i].Key %>">Delete</td>
     <br>
     <% }%>
